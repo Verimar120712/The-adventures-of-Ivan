@@ -111,16 +111,19 @@ class FoodItem:
     def __repr__(self):
         return f'FoodItem(name={self.name}, heal={self.heal})'
     
+def main()
+    character = Character('Кто-то', 100, 90, 30)
+    print(character)
 
-# character = Character('Кто-то', 100, 90, 30)
-# print(character)
+    ivan = Player('Ваня', 100, 70, 20, 0)   
+    print(ivan)
 
-# ivan = Player('Ваня', 100, 70, 20, 0)   
-# print(ivan)
+    enemy = Enemy('Кабан', 80, 80, 25)
+    print(enemy)
 
-# enemy = Enemy('Кабан', 80, 80, 25)
-# print(enemy)
+    while ivan.hp > 0 and enemy.hp > 0:
+    print(ivan.attack(enemy))
+    print(enemy.attack(ivan))
 
-# while ivan.hp > 0 and enemy.hp > 0:
-#     print(ivan.attack(enemy))
-#     print(enemy.attack(ivan))
+if __name__ =='__main__':
+    main()
